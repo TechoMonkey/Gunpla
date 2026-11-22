@@ -1,0 +1,19 @@
+{
+  "id": "shoulder-shield",
+  "name": "Shoulder Shield",
+  "category": "shield",
+  "slotCost": 1,
+  "points": 10,
+  "description": "Protection is supplied through the Shoulder Brace order.",
+  "orders": [
+    {
+      "id": "shoulder-brace",
+      "name": "Shoulder Brace",
+      "phase": 1,
+      "weight": 10,
+      "usesPerRound": 1,
+      "description": "Gain +1 Armor until the end of the current turn.",
+      "steps": [{ "type": "modifier", "stat": "armor", "amount": 1, "duration": { "turns": 1 } }]
+    }
+  ]
+}

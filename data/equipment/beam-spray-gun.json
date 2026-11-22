@@ -1,0 +1,42 @@
+{
+  "id": "beam-spray-gun",
+  "name": "Beam Spray Gun",
+  "category": "weapon",
+  "slotCost": 1,
+  "points": 20,
+  "description": "Close-range beam fire to 12 inches.",
+  "rangeProfile": [
+    { "max": 4, "hit": 3 },
+    { "max": 8, "hit": 4 },
+    { "max": 12, "hit": 5 }
+  ],
+  "orders": [
+    {
+      "id": "beam-spray-shot",
+      "name": "Beam Spray Shot",
+      "phase": 2,
+      "weight": 12,
+      "description": "Make one ranged attack.",
+      "steps": [{ "type": "rangedAttack", "dice": 2, "damage": 2, "sp": 1 }]
+    },
+    {
+      "id": "advance-and-fire",
+      "name": "Advance and Fire",
+      "phase": 3,
+      "weight": 12,
+      "description": "Move up to half the suit's current Movement stat, then make one ranged attack.",
+      "steps": [
+        { "type": "move", "allowance": "half" },
+        { "type": "rangedAttack", "dice": 1, "damage": 2, "sp": 1 }
+      ]
+    },
+    {
+      "id": "charged-shot",
+      "name": "Charged Shot",
+      "phase": 4,
+      "weight": 5,
+      "description": "Make one ranged attack.",
+      "steps": [{ "type": "rangedAttack", "dice": 3, "damage": 2, "sp": 1 }]
+    }
+  ]
+}

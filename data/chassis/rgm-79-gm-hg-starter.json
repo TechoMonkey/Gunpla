@@ -1,0 +1,22 @@
+{
+  "id": "rgm-79-gm-hg-starter",
+  "name": "GM",
+  "modelNumber": "RGM-79",
+  "grade": "HG",
+  "version": "Starter",
+  "referenceScale": "1/144",
+  "points": 55,
+  "stats": {
+    "hull": 7,
+    "armor": 1,
+    "shielding": { "dice": 4, "target": 5 },
+    "movement": 6,
+    "jump": 2
+  },
+  "cooling": { "kind": "halve" },
+  "slots": { "weapon": 2, "shield": 1, "upgrade": 3 },
+  "supportsFlightUpgrades": true,
+  "landingPermitted": true,
+  "startingBand": "grounded",
+  "orders": ["move", "cool"]
+}

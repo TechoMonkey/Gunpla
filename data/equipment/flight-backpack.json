@@ -1,0 +1,22 @@
+{
+  "id": "flight-backpack",
+  "name": "Flight Backpack",
+  "category": "upgrade",
+  "upgradeType": "specialized",
+  "slotCost": 1,
+  "points": 25,
+  "requires": ["supportsFlightUpgrades"],
+  "grants": ["flight"],
+  "description": "Grants Flight capability and the protected Flight toggle order. Requires a chassis that supports Flight upgrades.",
+  "orders": [
+    {
+      "id": "flight",
+      "name": "Flight",
+      "phase": 1,
+      "weight": 10,
+      "protected": true,
+      "description": "While grounded, enable Flight and enter Hover.",
+      "steps": [{ "type": "enableFlight" }]
+    }
+  ]
+}

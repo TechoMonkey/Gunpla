@@ -1,0 +1,52 @@
+{
+  "version": "foundation v0.1",
+  "heatCheckTable": [
+    { "minHeat": 1, "maxHeat": 1, "damageOn": 1, "disableOn": 0 },
+    { "minHeat": 2, "maxHeat": 3, "damageOn": 2, "disableOn": 0 },
+    { "minHeat": 4, "maxHeat": 7, "damageOn": 3, "disableOn": 1 },
+    { "minHeat": 8, "maxHeat": 15, "damageOn": 4, "disableOn": 2 },
+    { "minHeat": 16, "maxHeat": null, "damageOn": 5, "disableOn": 3 }
+  ],
+  "heatCheckDamage": 1,
+  "flightBands": {
+    "grounded": { "label": "Grounded", "altitude": 0, "movementBonus": 0, "rangeBonus": 0, "shieldingBonus": 0, "noCover": false },
+    "hover": { "label": "Hover", "altitude": 2, "movementBonus": 0, "rangeBonus": 3, "shieldingBonus": 0, "noCover": true },
+    "mid": { "label": "Mid-altitude", "altitude": 6, "movementBonus": 2, "rangeBonus": 3, "shieldingBonus": 0, "noCover": true },
+    "high": { "label": "High-altitude", "altitude": 10, "movementBonus": 4, "rangeBonus": 3, "shieldingBonus": 2, "noCover": true }
+  },
+  "coverArmorBonus": 1,
+  "wreck": { "hull": 3, "armor": 1, "shieldingDice": 0 },
+  "crash": {
+    "hover": { "maxDistance": 2, "impact": 1 },
+    "mid": { "maxDistance": 6, "impact": 2 },
+    "high": { "maxDistance": 10, "impact": 3 }
+  },
+  "terrainProfiles": [
+    { "name": "Light terrain (crates, barricades)", "hull": 3, "armor": 0, "shieldingDice": 0 },
+    { "name": "Building", "hull": 6, "armor": 1, "shieldingDice": 0 },
+    { "name": "Reinforced structure", "hull": 10, "armor": 2, "shieldingDice": 0 },
+    { "name": "Indestructible terrain", "hull": null, "armor": null, "shieldingDice": null }
+  ],
+  "mission": {
+    "name": "Objective-control starter mission",
+    "rounds": 5,
+    "objectives": 3,
+    "controlRadius": 3,
+    "vpPerObjective": 1
+  },
+  "battlefields": {
+    "standard": {
+      "label": "Standard 36 × 36 in",
+      "size": "36 × 36 inches",
+      "deployment": "Within 6 inches of opposite edges",
+      "objectives": "On the halfway line, 9, 18 and 27 inches from one side"
+    },
+    "full": {
+      "label": "Full table 96 × 43 in",
+      "size": "96 × 43 inches",
+      "deployment": "Within 6 inches of opposite 96-inch edges",
+      "objectives": "21.5 inches from either deployment edge, 24, 48 and 72 inches from one short end"
+    }
+  },
+  "deploymentZoneDepth": 6
+}

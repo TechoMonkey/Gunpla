@@ -1,0 +1,42 @@
+{
+  "id": "machine-gun",
+  "name": "Machine Gun",
+  "category": "weapon",
+  "slotCost": 1,
+  "points": 20,
+  "description": "Flexible machine-gun fire to 18 inches.",
+  "rangeProfile": [
+    { "max": 4, "hit": 5 },
+    { "max": 12, "hit": 4 },
+    { "max": 18, "hit": 5 }
+  ],
+  "orders": [
+    {
+      "id": "machine-gun-shot",
+      "name": "Machine Gun Shot",
+      "phase": 2,
+      "weight": 10,
+      "description": "Make one ranged attack.",
+      "steps": [{ "type": "rangedAttack", "dice": 5, "damage": 1, "sp": 0 }]
+    },
+    {
+      "id": "advance-and-fire",
+      "name": "Advance and Fire",
+      "phase": 3,
+      "weight": 10,
+      "description": "Move up to half the suit's current Movement stat, then make one ranged attack.",
+      "steps": [
+        { "type": "move", "allowance": "half" },
+        { "type": "rangedAttack", "dice": 4, "damage": 1, "sp": 0 }
+      ]
+    },
+    {
+      "id": "sustained-burst",
+      "name": "Sustained Burst",
+      "phase": 4,
+      "weight": 5,
+      "description": "Make one ranged attack.",
+      "steps": [{ "type": "rangedAttack", "dice": 7, "damage": 1, "sp": 0 }]
+    }
+  ]
+}

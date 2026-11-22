@@ -1,0 +1,18 @@
+{
+  "id": "beam-saber",
+  "name": "Beam Saber",
+  "category": "weapon",
+  "slotCost": 1,
+  "points": 10,
+  "description": "Melee weapon with reach 2 inches and Hit 4+.",
+  "orders": [
+    {
+      "id": "beam-saber-strike",
+      "name": "Beam Saber Strike",
+      "phase": 2,
+      "weight": 10,
+      "description": "Make one melee attack.",
+      "steps": [{ "type": "meleeAttack", "dice": 2, "damage": 2, "sp": 1, "reach": 2, "hit": 4 }]
+    }
+  ]
+}

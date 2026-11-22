@@ -1,0 +1,15 @@
+{
+  "name": "Zaku Starter Pair",
+  "suits": [
+    {
+      "label": "Zaku A Gunner",
+      "chassis": "zaku-ii-hg-starter",
+      "equipment": ["machine-gun", "heat-hawk", "shoulder-shield"]
+    },
+    {
+      "label": "Zaku B Heavy Gunner",
+      "chassis": "zaku-ii-hg-starter",
+      "equipment": ["bazooka", "heat-hawk", "shoulder-shield"]
+    }
+  ]
+}

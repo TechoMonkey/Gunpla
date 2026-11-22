@@ -1,0 +1,10 @@
+{
+  "id": "reinforced-plating",
+  "name": "Reinforced Plating",
+  "category": "upgrade",
+  "upgradeType": "general",
+  "slotCost": 1,
+  "points": 20,
+  "description": "Passive +1 Armor. Protected from heat-based disabling.",
+  "passive": { "armor": 1 }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "gm-shield",
+  "name": "GM Shield",
+  "category": "shield",
+  "slotCost": 1,
+  "points": 15,
+  "description": "Protection is supplied through Shield Up and Shield Bash.",
+  "orders": [
+    {
+      "id": "shield-up",
+      "name": "Shield Up",
+      "phase": 1,
+      "weight": 10,
+      "usesPerRound": 1,
+      "description": "Gain +2 Shielding dice until the end of the current round.",
+      "steps": [{ "type": "modifier", "stat": "shieldingDice", "amount": 2, "duration": "round" }]
+    }
+  ],
+  "counterattacks": [
+    {
+      "id": "shield-bash",
+      "name": "Shield Bash",
+      "weight": 10,
+      "reach": 2,
+      "heatCost": 1,
+      "usesPerRound": 1,
+      "trigger": "After an enemy declares a ranged attack from a normal order against another operational allied Gunpla, before attack dice or interception rolls. The shooter must be within 2 inches of the equipped suit and in torso-to-torso line of sight.",
+      "effect": "Cancel that one pending ranged attack step (the step is spent). Resolve the counterattack's heat check, then the enemy finishes any remaining legal steps and applies normal activation heat."
+    }
+  ]
+}

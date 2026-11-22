@@ -1,0 +1,42 @@
+{
+  "id": "beam-rifle",
+  "name": "Beam Rifle",
+  "category": "weapon",
+  "slotCost": 1,
+  "points": 20,
+  "description": "Reaches 24 inches with its best accuracy beyond 18 inches.",
+  "rangeProfile": [
+    { "max": 6, "hit": 5 },
+    { "max": 18, "hit": 4 },
+    { "max": 24, "hit": 3 }
+  ],
+  "orders": [
+    {
+      "id": "beam-rifle-shot",
+      "name": "Beam Rifle Shot",
+      "phase": 2,
+      "weight": 8,
+      "description": "Make one ranged attack.",
+      "steps": [{ "type": "rangedAttack", "dice": 1, "damage": 3, "sp": 1 }]
+    },
+    {
+      "id": "advance-and-fire",
+      "name": "Advance and Fire",
+      "phase": 3,
+      "weight": 8,
+      "description": "Move up to half the suit's current Movement stat, then make one ranged attack.",
+      "steps": [
+        { "type": "move", "allowance": "half" },
+        { "type": "rangedAttack", "dice": 1, "damage": 2, "sp": 1 }
+      ]
+    },
+    {
+      "id": "aimed-rifle-shot",
+      "name": "Aimed Rifle Shot",
+      "phase": 4,
+      "weight": 5,
+      "description": "Make one ranged attack.",
+      "steps": [{ "type": "rangedAttack", "dice": 1, "damage": 4, "sp": 1 }]
+    }
+  ]
+}

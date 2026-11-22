@@ -1,0 +1,20 @@
+[
+  {
+    "id": "move",
+    "name": "Move",
+    "phase": 1,
+    "weight": 15,
+    "description": "Move up to the current Movement stat, using the suit's current Jump capability under the foundation movement rules.",
+    "steps": [{ "type": "move", "allowance": "full" }]
+  },
+  {
+    "id": "cool",
+    "name": "Cool",
+    "phase": 1,
+    "weight": 5,
+    "usesPerRound": 1,
+    "protected": true,
+    "description": "Apply the suit's cooling strength, restore all heat-disabled orders and counterattacks, and gain the heat-check exemption for the rest of the round.",
+    "steps": [{ "type": "cool" }]
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "name": "GM Starter Pair",
+  "suits": [
+    {
+      "label": "GM A Assault",
+      "chassis": "rgm-79-gm-hg-starter",
+      "equipment": ["beam-spray-gun", "beam-saber", "gm-shield"]
+    },
+    {
+      "label": "GM B Marksman",
+      "chassis": "rgm-79-gm-hg-starter",
+      "equipment": ["beam-rifle", "beam-saber", "gm-shield"]
+    }
+  ]
+}

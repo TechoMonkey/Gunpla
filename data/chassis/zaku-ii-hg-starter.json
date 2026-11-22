@@ -1,0 +1,22 @@
+{
+  "id": "zaku-ii-hg-starter",
+  "name": "Zaku II",
+  "modelNumber": "MS-06",
+  "grade": "HG",
+  "version": "Starter",
+  "referenceScale": "1/144",
+  "points": 55,
+  "stats": {
+    "hull": 8,
+    "armor": 1,
+    "shielding": { "dice": 3, "target": 5 },
+    "movement": 6,
+    "jump": 2
+  },
+  "cooling": { "kind": "subtract", "amount": 3 },
+  "slots": { "weapon": 2, "shield": 1, "upgrade": 3 },
+  "supportsFlightUpgrades": false,
+  "landingPermitted": true,
+  "startingBand": "grounded",
+  "orders": ["move", "cool"]
+}
